@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="PlayerWindow">
+  <IsDefault>false</IsDefault>
+  <Width>1280</Width>
+  <Height>720</Height>
+  <Name>myAnimePlaying</Name>
+  <Id>26</Id>
+  <BackgroundBrush />
+  <WindowAnimations />
+  <WindowControls>
+    <Control x:type="Group">
+      <Name>Playing Window</Name>
+      <Id>1</Id>
+      <Width>1280</Width>
+      <Height>720</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle StyleId="Empty" />
+      <GroupControls>
+        <Control x:type="Image">
+          <Name>Hovers</Name>
+          <Id>2</Id>
+          <Width>1280</Width>
+          <Height>720</Height>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle>
+            <BackgroundBrush x:type="ImageBrush" Image="\Hovers\My_Anime.jpg" Stretch="Fill" />
+          </ImageStyle>
+          <Image>#Anime3.Fanart.1</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverImage x:type="ImageBrush" Image="\movingpics_overlay.png" Stretch="Fill" />
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Label">
+          <Name>Title</Name>
+          <Id>3</Id>
+          <Width>1280</Width>
+          <Height>90</Height>
+          <PosY>422</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Fluid80 White" />
+          <LabelText>#Anime3.Episode.EpisodeName</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="ProgressBar">
+          <Name>ProgressBar</Name>
+          <Id>4</Id>
+          <Width>649</Width>
+          <Height>50</Height>
+          <PosX>313</PosX>
+          <PosY>654</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ProgressBarStyle StyleId="default" />
+          <ProgressValue>#percentage</ProgressValue>
+        </Control>
+        <Control x:type="Label">
+          <Name>Playtime</Name>
+          <Id>5</Id>
+          <Width>321</Width>
+          <Height>90</Height>
+          <PosY>626</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Fluid80 White" />
+          <LabelText>#currentplaytime</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Label">
+          <Name>currentremaining</Name>
+          <Id>6</Id>
+          <Width>321</Width>
+          <Height>90</Height>
+          <PosX>955</PosX>
+          <PosY>626</PosY>
+          <VisibleCondition>!IsPlayer(Rockstar)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Fluid80 White" />
+          <LabelText>#currentremaining</LabelText>
+          <LabelTextAlignment>Right</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Image">
+          <Name>Video Codec</Name>
+          <Id>7</Id>
+          <Width>125</Width>
+          <Height>85</Height>
+          <PosY>332</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\+#Play.Current.VideoCodec.Texture+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Video Resolution</Name>
+          <Id>8</Id>
+          <Width>125</Width>
+          <Height>85</Height>
+          <PosX>125</PosX>
+          <PosY>332</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\+#Play.Current.VideoResolution+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Video Aspect Ratio</Name>
+          <Id>9</Id>
+          <Width>125</Width>
+          <Height>85</Height>
+          <PosX>250</PosX>
+          <PosY>332</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\+#Play.Current.AspectRatio+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Audio Codec</Name>
+          <Id>10</Id>
+          <Width>125</Width>
+          <Height>85</Height>
+          <PosX>375</PosX>
+          <PosY>332</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\+#Play.Current.AudioCodec.Texture+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Audio Channels</Name>
+          <Id>11</Id>
+          <Width>125</Width>
+          <Height>85</Height>
+          <PosX>500</PosX>
+          <PosY>332</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Logos\+#Play.Current.AudioChannels+.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Group">
+      <Name>UpperBar</Name>
+      <Id>12</Id>
+      <Width>509</Width>
+      <Height>58</Height>
+      <PosX>290</PosX>
+      <PosY>6</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle>
+        <BackgroundBrush x:type="ImageBrush" Image="\tvtitlebg.png" Stretch="Fill" />
+        <BorderBrush />
+        <GlossBrush />
+      </GroupStyle>
+      <GroupControls>
+        <Control x:type="Label">
+          <Name>Window</Name>
+          <Id>13</Id>
+          <Width>493</Width>
+          <Height>50</Height>
+          <PosY>-6</PosY>
+          <VisibleCondition>!IsPlayer(mvCentral)</VisibleCondition>
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Fluid40 White" />
+          <LabelText>#currentmodule</LabelText>
+          <LabelTextAlignment>Right</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Group">
+      <Name>Time / Weather</Name>
+      <Id>14</Id>
+      <Width>1280</Width>
+      <Height>720</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle StyleId="Empty" />
+      <GroupControls>
+        <Control x:type="Image">
+          <Name>Clock BG</Name>
+          <Id>15</Id>
+          <Width>297</Width>
+          <Height>72</Height>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\clockbackground.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Label">
+          <Name>Time</Name>
+          <Id>16</Id>
+          <Width>188</Width>
+          <Height>70</Height>
+          <PosX>96</PosX>
+          <PosY>-4</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Fluid60 White" />
+          <LabelText>#Time</LabelText>
+          <LabelTextAlignment>Right</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Image">
+          <Name>WorldWeatherBG</Name>
+          <Id>17</Id>
+          <Width>306</Width>
+          <Height>76</Height>
+          <PosX>975</PosX>
+          <VisibleCondition>IsPluginEnabled(WorldWeather)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\homeweatheroverlaybg.png</Image>
+          <ImageStretch>Uniform</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Weather Icon Today</Name>
+          <Id>18</Id>
+          <Width>51</Width>
+          <Height>43</Height>
+          <PosX>1003</PosX>
+          <PosY>17</PosY>
+          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>#WorldWeather.TodayIconImage</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Label">
+          <Name>Current Temp</Name>
+          <Id>19</Id>
+          <Width>196</Width>
+          <Height>50</Height>
+          <PosX>1069</PosX>
+          <PosY>11</PosY>
+          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Fluid40 White" />
+          <LabelText>#WorldWeather.TodayTemperature</LabelText>
+          <LabelTextAlignment>Right</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Image">
+          <Name>Rec</Name>
+          <Id>21</Id>
+          <Width>60</Width>
+          <Height>60</Height>
+          <PosX>7</PosX>
+          <PosY>3</PosY>
+          <VisibleCondition>IsTvRecording</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations>
+            <Animation x:type="Fade" Condition="VisibleTrue" Duration="2000" Reverse="true" Repeat="100000" From="20" />
+            <Animation x:type="Fade" Condition="VisibleFalse" Duration="2000" From="100" To="0" />
+          </Animations>
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\tvguide_record_button.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Button">
+      <Name>PlayMenu</Name>
+      <Id>20</Id>
+      <Width>1280</Width>
+      <Height>100</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle StyleId="None2" />
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="904" />
+      </Actions>
+    </Control>
+  </WindowControls>
+  <VisibleCondition>IsPlayer(MyAnime)</VisibleCondition>
+</Window>

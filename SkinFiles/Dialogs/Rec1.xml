@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialog xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MPDisplayDialog">
+  <Name>Rec1</Name>
+  <Id>2000</Id>
+  <Width>1280</Width>
+  <Height>300</Height>
+  <BorderThickness>2</BorderThickness>
+  <CornerRadius>5</CornerRadius>
+  <BackgroundBrush x:type="ImageBrush" Image="\hiddenmenu_top.png" Stretch="Fill" />
+  <BorderBrush />
+  <DialogAnimations>
+    <Animation x:type="Slide" Condition="WindowOpen" Duration="500" Easing="EaseOut" StartY="-300" />
+    <Animation x:type="Slide" Condition="WindowClose" Duration="500" Easing="EaseIn" EndY="-300" />
+  </DialogAnimations>
+  <DialogControls>
+    <Control x:type="Label">
+      <Name>Question</Name>
+      <Id>1</Id>
+      <Width>900</Width>
+      <Height>169</Height>
+      <PosX>190</PosX>
+      <PosY>10</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Fluid60 White" />
+      <LabelText>@Rec1</LabelText>
+      <LabelTextAlignment>Center</LabelTextAlignment>
+      <IsVertical>true</IsVertical>
+      <IsScrollingEnabled>false</IsScrollingEnabled>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+    </Control>
+    <Control x:type="Button">
+      <Name>NewButton</Name>
+      <Id>2</Id>
+      <Width>360</Width>
+      <Height>73</Height>
+      <PosX>280</PosX>
+      <PosY>187</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle StyleId="Standard Button" />
+      <LabelText>@yes</LabelText>
+      <Actions>
+        <Action Action="ScheduleEPGAction" />
+        <Action Action="OpenDialog" Param="2000" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>NewButton</Name>
+      <Id>3</Id>
+      <Width>360</Width>
+      <Height>73</Height>
+      <PosX>640</PosX>
+      <PosY>187</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle StyleId="Standard Button" />
+      <LabelText>@no</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="2000" />
+      </Actions>
+    </Control>
+  </DialogControls>
+</Dialog>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MPDisplayWindow">
+  <IsDefault>true</IsDefault>
+  <Width>1280</Width>
+  <Height>720</Height>
+  <Name>Home</Name>
+  <Id>10000</Id>
+  <BackgroundBrush x:type="ImageBrush" Image="\splashscreen.png" Stretch="Fill" />
+  <WindowAnimations>
+    <Animation x:type="Zoom" Condition="WindowOpen" Duration="500" Easing="EaseOut" />
+    <Animation x:type="Zoom" Condition="WindowClose" Duration="500" Delay="500" From="100" To="0" />
+  </WindowAnimations>
+  <WindowControls>
+    <Control x:type="Button">
+      <Name>NewButton</Name>
+      <Id>1</Id>
+      <Width>380</Width>
+      <Height>100</Height>
+      <PosX>450</PosX>
+      <PosY>347</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush x:type="ImageBrush" Image="\tv_button_ no_focus.png" Stretch="Fill" />
+        <NoFocusBorderBrush />
+        <FocusBrush x:type="ImageBrush" Image="\tv_button_focus.png" Stretch="Fill" />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <FontType>Fluid Body Caps</FontType>
+        <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FFF4F4F4" />
+        <LabelMargin>0,-5,0,0</LabelMargin>
+      </ButtonStyle>
+      <LabelText>Reconnect</LabelText>
+      <Actions>
+        <Action Action="Connect" />
+      </Actions>
+    </Control>
+  </WindowControls>
+</Window>

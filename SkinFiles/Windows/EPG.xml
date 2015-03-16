@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MediaPortalWindow">
+  <IsDefault>false</IsDefault>
+  <Width>1280</Width>
+  <Height>720</Height>
+  <Name>EPG</Name>
+  <Id>17</Id>
+  <BackgroundBrush />
+  <WindowAnimations />
+  <WindowControls>
+    <Control x:type="Image">
+      <Name>Hovers</Name>
+      <Id>9</Id>
+      <Width>1280</Width>
+      <Height>720</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ImageStyle>
+        <BackgroundBrush x:type="ImageBrush" Image="\Hovers\hover_my tv.jpg" Stretch="Fill" />
+      </ImageStyle>
+      <Image>#MPD2.fanart.movie</Image>
+      <ImageStretch>Fill</ImageStretch>
+      <CoverImage x:type="ImageBrush" Image="\tvviewbg.png" Stretch="Fill" />
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+    </Control>
+    <Control x:type="Guide">
+      <Name>NewGuide</Name>
+      <Id>12</Id>
+      <Width>1256</Width>
+      <Height>631</Height>
+      <PosX>10</PosX>
+      <PosY>75</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <GuideStyle StyleId="GuideStyle">
+        <TimelineMarkerThickness>0</TimelineMarkerThickness>
+      </GuideStyle>
+      <ChannelListWidth>330</ChannelListWidth>
+      <GuideItemHeight>59</GuideItemHeight>
+      <ChannelStyle StyleId="GuideChannelStyle" />
+      <ProgramStyle StyleId="GuideProgramStyle" />
+      <CreateDialogId>2000</CreateDialogId>
+      <CancelDialogId>2001</CancelDialogId>
+    </Control>
+    <Control x:type="Group">
+      <Name>UpperBar</Name>
+      <Id>1</Id>
+      <Width>509</Width>
+      <Height>58</Height>
+      <PosX>290</PosX>
+      <PosY>6</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle>
+        <BackgroundBrush x:type="ImageBrush" Image="\tvtitlebg.png" Stretch="Fill" />
+        <BorderBrush />
+        <GlossBrush />
+      </GroupStyle>
+      <GroupControls>
+        <Control x:type="Label">
+          <Name>Window</Name>
+          <Id>2</Id>
+          <Width>493</Width>
+          <Height>50</Height>
+          <VisibleCondition>!IsPlayer(mvCentral)</VisibleCondition>
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="FluidBody40 White" />
+          <LabelText>#currentmodule</LabelText>
+          <LabelTextAlignment>Right</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Group">
+      <Name>Time / Weather</Name>
+      <Id>3</Id>
+      <Width>1280</Width>
+      <Height>100</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle StyleId="Empty" />
+      <GroupControls>
+        <Control x:type="Image">
+          <Name>Clock BG</Name>
+          <Id>4</Id>
+          <Width>297</Width>
+          <Height>72</Height>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\clockbackground.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Label">
+          <Name>Time</Name>
+          <Id>5</Id>
+          <Width>188</Width>
+          <Height>70</Height>
+          <PosX>96</PosX>
+          <PosY>-4</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Fluid60 White" />
+          <LabelText>#time</LabelText>
+          <LabelTextAlignment>Right</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Image">
+          <Name>WorldWeatherBG</Name>
+          <Id>6</Id>
+          <Width>306</Width>
+          <Height>76</Height>
+          <PosX>975</PosX>
+          <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\homeweatheroverlaybg.png</Image>
+          <ImageStretch>Uniform</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Weather Icon Today</Name>
+          <Id>7</Id>
+          <Width>51</Width>
+          <Height>43</Height>
+          <PosX>1003</PosX>
+          <PosY>17</PosY>
+          <VisibleCondition>IsControlVisible(6)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>#WorldWeather.TodayIconImage</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Label">
+          <Name>Current Temp</Name>
+          <Id>8</Id>
+          <Width>196</Width>
+          <Height>50</Height>
+          <PosX>1069</PosX>
+          <PosY>11</PosY>
+          <VisibleCondition>IsControlVisible(6)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Fluid40 White" />
+          <LabelText>#WorldWeather.TodayTemperature</LabelText>
+          <LabelTextAlignment>Right</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Image">
+          <Name>Rec</Name>
+          <Id>13</Id>
+          <Width>60</Width>
+          <Height>60</Height>
+          <PosX>7</PosX>
+          <PosY>3</PosY>
+          <VisibleCondition>IsTvRecording</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations>
+            <Animation x:type="Fade" Condition="VisibleTrue" Duration="2000" Reverse="true" Repeat="100000" From="20" />
+            <Animation x:type="Fade" Condition="VisibleFalse" Duration="2000" From="100" To="0" />
+          </Animations>
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\tvguide_record_button.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Button">
+      <Name>Menu</Name>
+      <Id>11</Id>
+      <Width>1280</Width>
+      <Height>100</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush />
+        <NoFocusBorderBrush />
+        <FocusBrush />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <EnableLabel>false</EnableLabel>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+      </ButtonStyle>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="903" />
+      </Actions>
+    </Control>
+  </WindowControls>
+  <VisibleCondition>IsMediaPortalWindow(600)</VisibleCondition>
+</Window>

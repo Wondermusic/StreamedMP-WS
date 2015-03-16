@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MediaPortalWindow">
+  <IsDefault>true</IsDefault>
+  <Width>1280</Width>
+  <Height>720</Height>
+  <Name>BasicHome</Name>
+  <Id>0</Id>
+  <BackgroundBrush />
+  <WindowAnimations />
+  <WindowControls>
+    <Control x:type="Group">
+      <Name>Horizontal</Name>
+      <Id>16</Id>
+      <Width>1280</Width>
+      <Height>720</Height>
+      <VisibleCondition>IsSkinOptionEnabled(Horizontal)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle StyleId="Empty" />
+      <GroupControls>
+        <Control x:type="Image">
+          <Name>Hovers</Name>
+          <Id>17</Id>
+          <Width>1280</Width>
+          <Height>720</Height>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Hovers\My_+#highlightedbutton+.jpg</Image>
+          <DefaultImage>\Hovers\default.jpg</DefaultImage>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverImage />
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>NewImage</Name>
+          <Id>18</Id>
+          <Width>1280</Width>
+          <Height>350</Height>
+          <PosY>356</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\vmenu_main.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Button">
+          <Name>Current Position</Name>
+          <Id>19</Id>
+          <Width>980</Width>
+          <Height>80</Height>
+          <PosX>150</PosX>
+          <PosY>490</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush />
+            <NoFocusBorderBrush />
+            <FocusBrush />
+            <FocusBorderBrush />
+            <ShadeBrush />
+            <GlossBrush />
+            <FontType>Fluid Title Caps</FontType>
+            <FontSize>70</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFE6E6FA" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+          </ButtonStyle>
+          <LabelText>#highlightedbutton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_SELECT_ITEM" />
+          </Actions>
+        </Control>
+        <Control x:type="Image">
+          <Name>SubMenu BG</Name>
+          <Id>20</Id>
+          <Width>350</Width>
+          <Height>450</Height>
+          <PosX>465</PosX>
+          <VisibleCondition>IsMediaPortalControlFocused(10001) || IsMediaPortalControlFocused(10002) || IsMediaPortalControlFocused(10003) || IsMediaPortalControlFocused(10004) || IsMediaPortalControlFocused(10005) || IsMediaPortalControlFocused(10006) || IsMediaPortalControlFocused(10007) || IsMediaPortalControlFocused(10008) || IsMediaPortalControlFocused(20001) || IsMediaPortalControlFocused(20002) || IsMediaPortalControlFocused(20003) || IsMediaPortalControlFocused(20004) || IsMediaPortalControlFocused(20005) || IsMediaPortalControlFocused(20006) || IsMediaPortalControlFocused(20007) || IsMediaPortalControlFocused(20008) || IsMediaPortalControlFocused(30001) || IsMediaPortalControlFocused(30002) || IsMediaPortalControlFocused(30003) || IsMediaPortalControlFocused(30004) || IsMediaPortalControlFocused(30005) || IsMediaPortalControlFocused(30006) || IsMediaPortalControlFocused(30007) || IsMediaPortalControlFocused(30008) || IsMediaPortalControlFocused(40001) || IsMediaPortalControlFocused(40002) || IsMediaPortalControlFocused(40003) || IsMediaPortalControlFocused(40004) || IsMediaPortalControlFocused(40005) || IsMediaPortalControlFocused(40006) || IsMediaPortalControlFocused(40007) || IsMediaPortalControlFocused(40008) || IsMediaPortalControlFocused(50001) || IsMediaPortalControlFocused(50002) || IsMediaPortalControlFocused(50003) || IsMediaPortalControlFocused(50004) || IsMediaPortalControlFocused(50005) || IsMediaPortalControlFocused(50006) || IsMediaPortalControlFocused(50007) || IsMediaPortalControlFocused(50008) || IsMediaPortalControlFocused(60001) || IsMediaPortalControlFocused(60002) || IsMediaPortalControlFocused(60003) || IsMediaPortalControlFocused(60004) || IsMediaPortalControlFocused(60005) || IsMediaPortalControlFocused(60006) || IsMediaPortalControlFocused(60007) || IsMediaPortalControlFocused(60008) || IsMediaPortalControlFocused(70001) || IsMediaPortalControlFocused(70002) || IsMediaPortalControlFocused(70003) || IsMediaPortalControlFocused(70004) || IsMediaPortalControlFocused(70005) || IsMediaPortalControlFocused(70006) || IsMediaPortalControlFocused(70007) || IsMediaPortalControlFocused(70008) || IsMediaPortalControlFocused(80001) || IsMediaPortalControlFocused(80002) || IsMediaPortalControlFocused(80003) || IsMediaPortalControlFocused(80004) || IsMediaPortalControlFocused(80005) || IsMediaPortalControlFocused(80006) || IsMediaPortalControlFocused(80007) || IsMediaPortalControlFocused(80008) || IsMediaPortalControlFocused(90001) || IsMediaPortalControlFocused(90002) || IsMediaPortalControlFocused(90003) || IsMediaPortalControlFocused(90004) || IsMediaPortalControlFocused(90005) || IsMediaPortalControlFocused(90006) || IsMediaPortalControlFocused(90007) || IsMediaPortalControlFocused(90008) || IsMediaPortalControlFocused(100001) || IsMediaPortalControlFocused(100002) || IsMediaPortalControlFocused(100003) || IsMediaPortalControlFocused(100004) || IsMediaPortalControlFocused(100005) || IsMediaPortalControlFocused(100006) || IsMediaPortalControlFocused(100007) || IsMediaPortalControlFocused(100008)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Dialogbg.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="List">
+          <Name>SubMenu</Name>
+          <Id>21</Id>
+          <Width>330</Width>
+          <Height>415</Height>
+          <PosX>475</PosX>
+          <PosY>25</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ListControlStyle StyleId="empty" />
+          <ListType>MediaPortalListControl</ListType>
+          <ListLayout>Auto</ListLayout>
+          <VerticalItemStyle>
+            <NoFocusBrush x:type="ImageBrush" Image="\dialogbigbuttonnf.png" Stretch="Fill" />
+            <NoFocusBorderBrush />
+            <FocusBrush x:type="ImageBrush" Image="\dialogbigbuttonfo.png" Stretch="Fill" />
+            <FocusBorderBrush />
+            <ShadeBrush />
+            <FontType>Fluid Body Caps</FontType>
+            <FontSize>35</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00B7FF" />
+            <LabelMargin>10,0,0,0</LabelMargin>
+            <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+            <ImageMargin>3,3,3,3</ImageMargin>
+            <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+            <ImageCornerRadius>4</ImageCornerRadius>
+            <Width>330</Width>
+            <Height>55</Height>
+            <ItemMargin>2,2,2,2</ItemMargin>
+            <HorizontalAlignment>Left</HorizontalAlignment>
+          </VerticalItemStyle>
+          <VerticalIconItemStyle />
+          <HorizontalItemStyle>
+            <BorderThickness>1,1,1,1</BorderThickness>
+            <CornerRadius>4,4,4,4</CornerRadius>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FontSize>18</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <LabelMargin>3,3,3,3</LabelMargin>
+            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+            <EnableImage>true</EnableImage>
+            <ImageMargin>3,3,3,33</ImageMargin>
+            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+            <Width>135</Width>
+            <Height>207</Height>
+            <ItemMargin>1,1,1,1</ItemMargin>
+          </HorizontalItemStyle>
+          <CoverFlowItemStyle>
+            <BorderThickness>1,1,1,1</BorderThickness>
+            <CornerRadius>4,4,4,4</CornerRadius>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FontSize>18</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <LabelMargin>3,3,3,3</LabelMargin>
+            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+            <EnableImage>true</EnableImage>
+            <ImageMargin>3,3,3,33</ImageMargin>
+            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+            <Width>135</Width>
+            <Height>207</Height>
+          </CoverFlowItemStyle>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Group">
+      <Name>Vertical</Name>
+      <Id>7</Id>
+      <Width>1280</Width>
+      <Height>720</Height>
+      <VisibleCondition>IsSkinOptionEnabled(Vertical)</VisibleCondition>
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle StyleId="Empty" />
+      <GroupControls>
+        <Control x:type="Image">
+          <Name>Hovers</Name>
+          <Id>9</Id>
+          <Width>1280</Width>
+          <Height>720</Height>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\Hovers\My_+#highlightedbutton+.jpg</Image>
+          <DefaultImage>\Hovers\default.jpg</DefaultImage>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverImage x:type="ImageBrush" Image="\basichome.menu.overlay.png" Stretch="Fill" />
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Button">
+          <Name>Current Position</Name>
+          <Id>32</Id>
+          <Width>488</Width>
+          <Height>80</Height>
+          <PosX>13</PosX>
+          <PosY>332</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush />
+            <NoFocusBorderBrush />
+            <FocusBrush />
+            <FocusBorderBrush />
+            <ShadeBrush />
+            <GlossBrush />
+            <FontType>Fluid Title Caps</FontType>
+            <FontSize>70</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFE6E6FA" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+          </ButtonStyle>
+          <LabelText>#highlightedbutton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_SELECT_ITEM" />
+          </Actions>
+        </Control>
+        <Control x:type="Image">
+          <Name>SubMenu BG</Name>
+          <Id>30</Id>
+          <Width>350</Width>
+          <Height>720</Height>
+          <PosX>516</PosX>
+          <VisibleCondition>IsMediaPortalControlFocused(10001) || IsMediaPortalControlFocused(10002) || IsMediaPortalControlFocused(10003) || IsMediaPortalControlFocused(10004) || IsMediaPortalControlFocused(10005) || IsMediaPortalControlFocused(10006) || IsMediaPortalControlFocused(10007) || IsMediaPortalControlFocused(10008) || IsMediaPortalControlFocused(20001) || IsMediaPortalControlFocused(20002) || IsMediaPortalControlFocused(20003) || IsMediaPortalControlFocused(20004) || IsMediaPortalControlFocused(20005) || IsMediaPortalControlFocused(20006) || IsMediaPortalControlFocused(20007) || IsMediaPortalControlFocused(20008) || IsMediaPortalControlFocused(30001) || IsMediaPortalControlFocused(30002) || IsMediaPortalControlFocused(30003) || IsMediaPortalControlFocused(30004) || IsMediaPortalControlFocused(30005) || IsMediaPortalControlFocused(30006) || IsMediaPortalControlFocused(30007) || IsMediaPortalControlFocused(30008) || IsMediaPortalControlFocused(40001) || IsMediaPortalControlFocused(40002) || IsMediaPortalControlFocused(40003) || IsMediaPortalControlFocused(40004) || IsMediaPortalControlFocused(40005) || IsMediaPortalControlFocused(40006) || IsMediaPortalControlFocused(40007) || IsMediaPortalControlFocused(40008) || IsMediaPortalControlFocused(50001) || IsMediaPortalControlFocused(50002) || IsMediaPortalControlFocused(50003) || IsMediaPortalControlFocused(50004) || IsMediaPortalControlFocused(50005) || IsMediaPortalControlFocused(50006) || IsMediaPortalControlFocused(50007) || IsMediaPortalControlFocused(50008) || IsMediaPortalControlFocused(60001) || IsMediaPortalControlFocused(60002) || IsMediaPortalControlFocused(60003) || IsMediaPortalControlFocused(60004) || IsMediaPortalControlFocused(60005) || IsMediaPortalControlFocused(60006) || IsMediaPortalControlFocused(60007) || IsMediaPortalControlFocused(60008) || IsMediaPortalControlFocused(70001) || IsMediaPortalControlFocused(70002) || IsMediaPortalControlFocused(70003) || IsMediaPortalControlFocused(70004) || IsMediaPortalControlFocused(70005) || IsMediaPortalControlFocused(70006) || IsMediaPortalControlFocused(70007) || IsMediaPortalControlFocused(70008) || IsMediaPortalControlFocused(80001) || IsMediaPortalControlFocused(80002) || IsMediaPortalControlFocused(80003) || IsMediaPortalControlFocused(80004) || IsMediaPortalControlFocused(80005) || IsMediaPortalControlFocused(80006) || IsMediaPortalControlFocused(80007) || IsMediaPortalControlFocused(80008) || IsMediaPortalControlFocused(90001) || IsMediaPortalControlFocused(90002) || IsMediaPortalControlFocused(90003) || IsMediaPortalControlFocused(90004) || IsMediaPortalControlFocused(90005) || IsMediaPortalControlFocused(90006) || IsMediaPortalControlFocused(90007) || IsMediaPortalControlFocused(90008) || IsMediaPortalControlFocused(100001) || IsMediaPortalControlFocused(100002) || IsMediaPortalControlFocused(100003) || IsMediaPortalControlFocused(100004) || IsMediaPortalControlFocused(100005) || IsMediaPortalControlFocused(100006) || IsMediaPortalControlFocused(100007) || IsMediaPortalControlFocused(100008)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\hiddenmenu_left.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="List">
+          <Name>List</Name>
+          <Id>31</Id>
+          <Width>315</Width>
+          <Height>363</Height>
+          <PosX>524</PosX>
+          <PosY>343</PosY>
+          <VisibleCondition>IsControlVisible(30)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <ListControlStyle StyleId="empty" />
+          <ListType>MediaPortalButtonGroup</ListType>
+          <ListLayout>Auto</ListLayout>
+          <VerticalItemStyle>
+            <NoFocusBrush />
+            <NoFocusBorderBrush />
+            <FocusBrush x:type="ImageBrush" Image="\playlist_sub_focus.png" Stretch="Fill" />
+            <FocusBorderBrush />
+            <ShadeBrush />
+            <GlossBrush />
+            <FontType>Fluid</FontType>
+            <FontSize>40</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFE8E8E8" />
+            <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+            <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+            <Width>310</Width>
+            <Height>59</Height>
+          </VerticalItemStyle>
+          <VerticalIconItemStyle />
+          <HorizontalItemStyle>
+            <BorderThickness>1,1,1,1</BorderThickness>
+            <CornerRadius>4,4,4,4</CornerRadius>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FontSize>18</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <LabelMargin>3,3,3,3</LabelMargin>
+            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+            <EnableImage>true</EnableImage>
+            <ImageMargin>3,3,3,33</ImageMargin>
+            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+            <Width>135</Width>
+            <Height>207</Height>
+            <ItemMargin>1,1,1,1</ItemMargin>
+          </HorizontalItemStyle>
+          <CoverFlowItemStyle>
+            <BorderThickness>1,1,1,1</BorderThickness>
+            <CornerRadius>4,4,4,4</CornerRadius>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FontSize>18</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+            <LabelMargin>3,3,3,3</LabelMargin>
+            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+            <EnableImage>true</EnableImage>
+            <ImageMargin>3,3,3,33</ImageMargin>
+            <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+            <Width>135</Width>
+            <Height>207</Height>
+          </CoverFlowItemStyle>
+        </Control>
+        <Control x:type="Button">
+          <Name>UP</Name>
+          <Id>33</Id>
+          <Width>494</Width>
+          <Height>160</Height>
+          <PosX>10</PosX>
+          <PosY>150</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush />
+            <NoFocusBorderBrush />
+            <FocusBrush />
+            <FocusBorderBrush />
+            <ShadeBrush />
+            <GlossBrush />
+            <EnableLabel>false</EnableLabel>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+          </ButtonStyle>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_MOVE_UP" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>DOWN</Name>
+          <Id>34</Id>
+          <Width>494</Width>
+          <Height>160</Height>
+          <PosX>6</PosX>
+          <PosY>418</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush />
+            <NoFocusBorderBrush />
+            <FocusBrush />
+            <FocusBorderBrush />
+            <ShadeBrush />
+            <GlossBrush />
+            <EnableLabel>false</EnableLabel>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+          </ButtonStyle>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_MOVE_DOWN" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>RIGHT</Name>
+          <Id>35</Id>
+          <Width>301</Width>
+          <Height>540</Height>
+          <PosX>519</PosX>
+          <PosY>148</PosY>
+          <VisibleCondition>!IsControlVisible(30)</VisibleCondition>
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush />
+            <NoFocusBorderBrush />
+            <FocusBrush />
+            <FocusBorderBrush />
+            <ShadeBrush />
+            <GlossBrush />
+            <EnableLabel>false</EnableLabel>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+          </ButtonStyle>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_MOVE_RIGHT" />
+          </Actions>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Group">
+      <Name>Time / Weather</Name>
+      <Id>1</Id>
+      <Width>1280</Width>
+      <Height>100</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle StyleId="Empty" />
+      <GroupControls>
+        <Control x:type="Image">
+          <Name>Clock BG</Name>
+          <Id>2</Id>
+          <Width>297</Width>
+          <Height>72</Height>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\clockbackground.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Label">
+          <Name>Time</Name>
+          <Id>3</Id>
+          <Width>202</Width>
+          <Height>70</Height>
+          <PosX>82</PosX>
+          <PosY>-4</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Fluid60 White" />
+          <LabelText>#time</LabelText>
+          <LabelTextAlignment>Right</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Image">
+          <Name>WorldWeatherBG</Name>
+          <Id>4</Id>
+          <Width>306</Width>
+          <Height>76</Height>
+          <PosX>975</PosX>
+          <VisibleCondition>IsPluginEnabled(World Weather)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\homeweatheroverlaybg.png</Image>
+          <ImageStretch>Uniform</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Weather Icon Today</Name>
+          <Id>5</Id>
+          <Width>51</Width>
+          <Height>43</Height>
+          <PosX>1003</PosX>
+          <PosY>17</PosY>
+          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>#WorldWeather.TodayIconImage</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Label">
+          <Name>Current Temp</Name>
+          <Id>6</Id>
+          <Width>196</Width>
+          <Height>50</Height>
+          <PosX>1069</PosX>
+          <PosY>11</PosY>
+          <VisibleCondition>IsControlVisible(4)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Fluid40 White" />
+          <LabelText>#WorldWeather.TodayTemperature</LabelText>
+          <LabelTextAlignment>Right</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Image">
+          <Name>Rec</Name>
+          <Id>45</Id>
+          <Width>60</Width>
+          <Height>60</Height>
+          <PosX>7</PosX>
+          <PosY>3</PosY>
+          <VisibleCondition>IsTvRecording</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations>
+            <Animation x:type="Fade" Condition="VisibleTrue" Duration="2000" Reverse="true" Repeat="100000" From="20" />
+            <Animation x:type="Fade" Condition="VisibleFalse" Duration="2000" From="100" To="0" />
+          </Animations>
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\tvguide_record_button.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Button">
+      <Name>Menu</Name>
+      <Id>29</Id>
+      <Width>640</Width>
+      <Height>100</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush />
+        <NoFocusBorderBrush />
+        <FocusBrush />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <EnableLabel>false</EnableLabel>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+      </ButtonStyle>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="903" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>Menu</Name>
+      <Id>43</Id>
+      <Width>640</Width>
+      <Height>100</Height>
+      <PosX>640</PosX>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush />
+        <NoFocusBorderBrush />
+        <FocusBrush />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <EnableLabel>false</EnableLabel>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+      </ButtonStyle>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="ControlVisible" Param="36" />
+      </Actions>
+    </Control>
+    <Control x:type="Group">
+      <Name>Exit Menu</Name>
+      <Id>36</Id>
+      <Width>1280</Width>
+      <Height>720</Height>
+      <VisibleCondition>IsMediaPortalControlFocused(7777) || IsMediaPortalControlFocused(7888) || IsMediaPortalControlFocused(7999) || IsMediaPortalControlFocused(79999)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle>
+        <BackgroundBrush x:type="ImageBrush" Image="\minimenubg.png" Stretch="Fill" />
+        <BorderBrush />
+        <GlossBrush />
+      </GroupStyle>
+      <GroupControls>
+        <Control x:type="Button">
+          <Name>Menu</Name>
+          <Id>44</Id>
+          <Width>1280</Width>
+          <Height>720</Height>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush />
+            <NoFocusBorderBrush />
+            <FocusBrush />
+            <FocusBorderBrush />
+            <ShadeBrush />
+            <GlossBrush />
+            <EnableLabel>false</EnableLabel>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+          </ButtonStyle>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="ControlVisible" Param="36" />
+          </Actions>
+        </Control>
+        <Control x:type="Rectangle">
+          <Name>NewRectangle</Name>
+          <Id>37</Id>
+          <Width>900</Width>
+          <Height>3</Height>
+          <PosX>190</PosX>
+          <PosY>300</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <BackgroundBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        </Control>
+        <Control x:type="Button">
+          <Name>NewButton</Name>
+          <Id>38</Id>
+          <Width>180</Width>
+          <Height>180</Height>
+          <PosX>190</PosX>
+          <PosY>310</PosY>
+          <VisibleCondition />
+          <Animations>
+            <Animation x:type="Zoom" Condition="FocusTrue" Duration="200" Easing="EaseInOut" From="100" To="120" />
+            <Animation x:type="Zoom" Condition="FocusFalse" Duration="200" Easing="EaseInOut" From="120" />
+          </Animations>
+          <MediaPortalFocusControls>
+            <MediaPortalControlId>7777</MediaPortalControlId>
+          </MediaPortalFocusControls>
+          <ButtonStyle>
+            <NoFocusBrush x:type="ImageBrush" Image="\button-focus.png" Stretch="Fill" />
+            <NoFocusBorderBrush />
+            <FocusBrush />
+            <FocusBorderBrush />
+            <ShadeBrush />
+            <GlossBrush />
+            <EnableLabel>false</EnableLabel>
+            <FontType>Titan</FontType>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <EnableImage>true</EnableImage>
+          </ButtonStyle>
+          <Image>\exit_button.png</Image>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_EXIT" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>NewButton</Name>
+          <Id>39</Id>
+          <Width>180</Width>
+          <Height>180</Height>
+          <PosX>425</PosX>
+          <PosY>310</PosY>
+          <VisibleCondition />
+          <Animations>
+            <Animation x:type="Zoom" Condition="FocusTrue" Duration="200" Easing="EaseInOut" From="100" To="120" />
+            <Animation x:type="Zoom" Condition="FocusFalse" Duration="200" Easing="EaseInOut" From="120" />
+          </Animations>
+          <MediaPortalFocusControls>
+            <MediaPortalControlId>7888</MediaPortalControlId>
+          </MediaPortalFocusControls>
+          <ButtonStyle>
+            <NoFocusBrush x:type="ImageBrush" Image="\button-focus.png" Stretch="Fill" />
+            <NoFocusBorderBrush />
+            <FocusBrush />
+            <FocusBorderBrush />
+            <ShadeBrush />
+            <GlossBrush />
+            <EnableLabel>false</EnableLabel>
+            <FontType>Titan</FontType>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <EnableImage>true</EnableImage>
+          </ButtonStyle>
+          <Image>\restart_button.png</Image>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_REBOOT" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>NewButton</Name>
+          <Id>40</Id>
+          <Width>180</Width>
+          <Height>180</Height>
+          <PosX>660</PosX>
+          <PosY>310</PosY>
+          <VisibleCondition />
+          <Animations>
+            <Animation x:type="Zoom" Condition="FocusTrue" Duration="200" Easing="EaseInOut" From="100" To="120" />
+            <Animation x:type="Zoom" Condition="FocusFalse" Duration="200" Easing="EaseInOut" From="120" />
+          </Animations>
+          <MediaPortalFocusControls>
+            <MediaPortalControlId>7999</MediaPortalControlId>
+          </MediaPortalFocusControls>
+          <ButtonStyle>
+            <NoFocusBrush x:type="ImageBrush" Image="\button-focus.png" Stretch="Fill" />
+            <NoFocusBorderBrush />
+            <FocusBrush />
+            <FocusBorderBrush />
+            <ShadeBrush />
+            <GlossBrush />
+            <EnableLabel>false</EnableLabel>
+            <FontType>Titan</FontType>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <EnableImage>true</EnableImage>
+          </ButtonStyle>
+          <Image>\shutdown_button.png</Image>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_SHUTDOWN" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>NewButton</Name>
+          <Id>41</Id>
+          <Width>180</Width>
+          <Height>180</Height>
+          <PosX>895</PosX>
+          <PosY>310</PosY>
+          <VisibleCondition />
+          <Animations>
+            <Animation x:type="Zoom" Condition="FocusTrue" Duration="200" Easing="EaseInOut" From="100" To="120" />
+            <Animation x:type="Zoom" Condition="FocusFalse" Duration="200" Easing="EaseInOut" From="120" />
+          </Animations>
+          <MediaPortalFocusControls>
+            <MediaPortalControlId>79999</MediaPortalControlId>
+          </MediaPortalFocusControls>
+          <ButtonStyle>
+            <NoFocusBrush x:type="ImageBrush" Image="\button-focus.png" Stretch="Fill" />
+            <NoFocusBorderBrush />
+            <FocusBrush />
+            <FocusBorderBrush />
+            <ShadeBrush />
+            <GlossBrush />
+            <EnableLabel>false</EnableLabel>
+            <FontType>Titan</FontType>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <EnableImage>true</EnableImage>
+          </ButtonStyle>
+          <Image>\settings_button.png</Image>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalWindow" Param="4" />
+          </Actions>
+        </Control>
+        <Control x:type="Label">
+          <Name>NewLabel</Name>
+          <Id>42</Id>
+          <Width>900</Width>
+          <Height>60</Height>
+          <PosX>190</PosX>
+          <PosY>505</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="FluidTitle50 White" />
+          <LabelText>#selecteditem</LabelText>
+          <LabelTextAlignment>Center</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Button">
+          <Name>EPG</Name>
+          <Id>46</Id>
+          <Width>175</Width>
+          <Height>175</Height>
+          <PosX>190</PosX>
+          <PosY>40</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush />
+            <NoFocusBorderBrush />
+            <FocusBrush />
+            <FocusBorderBrush />
+            <ShadeBrush />
+            <GlossBrush />
+            <FontType>Fluid</FontType>
+            <FontSize>50</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF7FFF00" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <LabelMargin>0,0,0,-60</LabelMargin>
+            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+            <EnableImage>true</EnableImage>
+          </ButtonStyle>
+          <Image>\defaultVideoBig.png</Image>
+          <LabelText>EPG</LabelText>
+          <Actions>
+            <Action Action="MediaPortalWindow" Param="600" />
+            <Action Action="ControlVisible" Param="36" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>Music</Name>
+          <Id>47</Id>
+          <Width>175</Width>
+          <Height>175</Height>
+          <PosX>421</PosX>
+          <PosY>40</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush />
+            <NoFocusBorderBrush />
+            <FocusBrush />
+            <FocusBorderBrush />
+            <ShadeBrush />
+            <GlossBrush />
+            <FontType>Fluid</FontType>
+            <FontSize>50</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF7FFF00" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <LabelMargin>0,0,0,-60</LabelMargin>
+            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+            <EnableImage>true</EnableImage>
+          </ButtonStyle>
+          <Image>\defaultAlbum.png</Image>
+          <LabelText>@Music</LabelText>
+          <Actions>
+            <Action Action="MediaPortalWindow" Param="501" />
+            <Action Action="ControlVisible" Param="36" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>Radio</Name>
+          <Id>48</Id>
+          <Width>175</Width>
+          <Height>175</Height>
+          <PosX>655</PosX>
+          <PosY>40</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush />
+            <NoFocusBorderBrush />
+            <FocusBrush />
+            <FocusBorderBrush />
+            <ShadeBrush />
+            <GlossBrush />
+            <FontType>Fluid</FontType>
+            <FontSize>50</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF7FFF00" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <LabelMargin>0,0,0,-60</LabelMargin>
+            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+            <EnableImage>true</EnableImage>
+          </ButtonStyle>
+          <Image>\DefaultMyradioBig.png</Image>
+          <LabelText>@Radio</LabelText>
+          <Actions>
+            <Action Action="MediaPortalWindow" Param="30" />
+            <Action Action="ControlVisible" Param="36" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>TuneIn</Name>
+          <Id>49</Id>
+          <Width>175</Width>
+          <Height>175</Height>
+          <PosX>893</PosX>
+          <PosY>40</PosY>
+          <VisibleCondition>IsPluginEnabled(TuneIn)</VisibleCondition>
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush />
+            <NoFocusBorderBrush />
+            <FocusBrush />
+            <FocusBorderBrush />
+            <ShadeBrush />
+            <GlossBrush />
+            <FontType>Fluid</FontType>
+            <FontSize>50</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF7FFF00" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <LabelMargin>0,0,0,-60</LabelMargin>
+            <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+            <EnableImage>true</EnableImage>
+          </ButtonStyle>
+          <Image>\DefaultMyradioBig.png</Image>
+          <LabelText>TuneIn</LabelText>
+          <Actions>
+            <Action Action="MediaPortalWindow" Param="25650" />
+            <Action Action="ControlVisible" Param="36" />
+          </Actions>
+        </Control>
+      </GroupControls>
+    </Control>
+  </WindowControls>
+  <VisibleCondition>IsMediaPortalWindow(35)</VisibleCondition>
+</Window>

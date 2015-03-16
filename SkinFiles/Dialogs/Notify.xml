@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialog xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MediaPortalDialog">
+  <Name>Notify</Name>
+  <Id>2016</Id>
+  <Width>669</Width>
+  <Height>608</Height>
+  <PosX>298</PosX>
+  <PosY>720</PosY>
+  <BackgroundBrush x:type="ImageBrush" Image="\Dialogbg.png" Stretch="Fill" />
+  <BorderBrush />
+  <DialogAnimations>
+    <Animation x:type="Slide" Condition="WindowOpen" Duration="400" Easing="EaseOut" StartX="298" StartY="720" EndX="298" EndY="114" />
+    <Animation x:type="Slide" Condition="WindowClose" Duration="400" Easing="EaseIn" StartX="298" StartY="114" EndX="298" EndY="720" />
+  </DialogAnimations>
+  <DialogControls>
+    <Control x:type="Button">
+      <Name>Exit</Name>
+      <Id>1</Id>
+      <Width>80</Width>
+      <Height>80</Height>
+      <PosX>588</PosX>
+      <PosY>-2</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <BorderThickness>1,1,1,1</BorderThickness>
+        <CornerRadius>8,8,8,8</CornerRadius>
+        <NoFocusBrush x:type="ImageBrush" Image="\Remote\top_exit_disabled.png" Stretch="Uniform" />
+        <NoFocusBorderBrush />
+        <FocusBrush x:type="ImageBrush" Image="\Remote\top_exit_enabled.png" Stretch="Uniform" />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <EnableLabel>false</EnableLabel>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="2016" />
+      </Actions>
+    </Control>
+    <Control x:type="Label">
+      <Name>Title</Name>
+      <Id>2</Id>
+      <Width>560</Width>
+      <Height>60</Height>
+      <PosX>8</PosX>
+      <PosY>12</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="FluidTitle50 White" />
+      <LabelText>#Dialog.Label0</LabelText>
+      <ScrollDelay>2</ScrollDelay>
+      <ScrollSpeed>12</ScrollSpeed>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+    </Control>
+    <Control x:type="Label">
+      <Name>TextArea1</Name>
+      <Id>3</Id>
+      <Width>650</Width>
+      <Height>500</Height>
+      <PosX>8</PosX>
+      <PosY>80</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Fluid40 White" />
+      <LabelText>#xfactor2.currentNotifyLabel</LabelText>
+      <IsVertical>true</IsVertical>
+      <ScrollDelay>2</ScrollDelay>
+      <ScrollSpeed>8</ScrollSpeed>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+    </Control>
+  </DialogControls>
+  <VisibleCondition>IsMediaPortalDialog(2016)</VisibleCondition>
+</Dialog>
