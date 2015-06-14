@@ -37,8 +37,8 @@
         <Control x:type="Label">
           <Name>Title</Name>
           <Id>15</Id>
-          <Width>375</Width>
-          <Height>50</Height>
+          <Width>365</Width>
+          <Height>177</Height>
           <PosX>296</PosX>
           <PosY>275</PosY>
           <VisibleCondition />
@@ -46,6 +46,7 @@
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Fluid40 White" />
           <LabelText>#selecteditem</LabelText>
+          <IsVertical>true</IsVertical>
           <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
           <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
@@ -91,7 +92,7 @@
       <Height>644</Height>
       <PosX>1280</PosX>
       <PosY>43</PosY>
-      <VisibleCondition>!IsMediaPortalControlFocused(50)</VisibleCondition>
+      <VisibleCondition>IsMediaPortalWindow(7986) ++ (IsMediaPortalControlFocused(2) || IsMediaPortalControlFocused(4) || IsMediaPortalControlFocused(5) || IsMediaPortalControlFocused(6) || IsMediaPortalControlFocused(7) || IsMediaPortalControlFocused(8) || IsMediaPortalControlFocused(66610) || IsMediaPortalControlFocused(99989) || IsMediaPortalControlFocused(99990))</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations>
         <Animation x:type="Slide" Condition="VisibleTrue" Duration="300" Easing="EaseOut" StartX="1280" StartY="43" EndX="944" EndY="43" />
@@ -619,7 +620,7 @@
           <Id>53</Id>
           <Width>1280</Width>
           <Height>720</Height>
-          <VisibleCondition>IsMediaPortalControlFocused(100001)</VisibleCondition>
+          <VisibleCondition>IsMediaPortalControlFocused(10001)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -666,7 +667,7 @@
           <Id>56</Id>
           <Width>1280</Width>
           <Height>720</Height>
-          <VisibleCondition>IsMediaPortalControlFocused(100002)</VisibleCondition>
+          <VisibleCondition>IsMediaPortalControlFocused(10002)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -713,7 +714,7 @@
           <Id>59</Id>
           <Width>1280</Width>
           <Height>720</Height>
-          <VisibleCondition>IsMediaPortalControlFocused(100003)</VisibleCondition>
+          <VisibleCondition>IsMediaPortalControlFocused(10003)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -1007,7 +1008,7 @@
       <Height>644</Height>
       <PosX>1280</PosX>
       <PosY>43</PosY>
-      <VisibleCondition>!IsMediaPortalControlFocused(10000) || !IsMediaPortalControlFocused(10001) || !IsMediaPortalControlFocused(10002) || !IsMediaPortalControlFocused(10003) || !IsMediaPortalControlFocused(10004) || !IsMediaPortalControlFocused(10099)</VisibleCondition>
+      <VisibleCondition>IsMediaPortalWindow(7987) ++ (IsMediaPortalControlFocused(107) || IsMediaPortalControlFocused(11899) || IsMediaPortalControlFocused(102) || IsMediaPortalControlFocused(66610) || IsMediaPortalControlFocused(103) || IsMediaPortalControlFocused(105))</VisibleCondition>
       <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations>
         <Animation x:type="Slide" Condition="VisibleTrue" Duration="300" Easing="EaseOut" StartX="1280" StartY="43" EndX="944" EndY="43" />
@@ -1093,7 +1094,7 @@
           <Width>493</Width>
           <Height>50</Height>
           <PosY>-6</PosY>
-          <VisibleCondition>!IsPlayer(mvCentral)</VisibleCondition>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Fluid40 White" />

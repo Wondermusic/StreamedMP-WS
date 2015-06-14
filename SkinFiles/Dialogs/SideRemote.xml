@@ -211,5 +211,63 @@
         </Control>
       </GroupControls>
     </Control>
+    <Control x:type="Button">
+      <Name>Shortcut</Name>
+      <Id>10</Id>
+      <Width>200</Width>
+      <Height>100</Height>
+      <PosX>81</PosX>
+      <PosY>344</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <EnableLabel>false</EnableLabel>
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <Image>\Remote\button_remote.png</Image>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="50000" />
+        <Action Action="OpenDialog" Param="903" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>Close</Name>
+      <Id>11</Id>
+      <Width>80</Width>
+      <Height>80</Height>
+      <PosX>277</PosX>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <EnableLabel>false</EnableLabel>
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <Image>\Remote\top_exit_disabled.png</Image>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="903" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>Back</Name>
+      <Id>12</Id>
+      <Width>80</Width>
+      <Height>80</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <EnableLabel>false</EnableLabel>
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <Image>\Remote\back_disabled.png</Image>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="MediaPortalAction" Param="ACTION_PREVIOUS_MENU" />
+      </Actions>
+    </Control>
   </DialogControls>
 </Dialog>

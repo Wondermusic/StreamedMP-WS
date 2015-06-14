@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialog xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MPDisplayDialog">
+  <Name>Shortcut</Name>
+  <Id>50000</Id>
+  <Width>1280</Width>
+  <Height>300</Height>
+  <BorderThickness>2</BorderThickness>
+  <CornerRadius>5</CornerRadius>
+  <BackgroundBrush x:type="ImageBrush" Image="\hiddenmenu_top.png" Stretch="Fill" />
+  <BorderBrush />
+  <DialogAnimations>
+    <Animation x:type="Slide" Condition="WindowOpen" Duration="1000" Easing="EaseOut" StartY="-300" />
+    <Animation x:type="Slide" Condition="WindowClose" Duration="1000" Easing="EaseIn" EndY="-300" />
+  </DialogAnimations>
+  <DialogControls>
+    <Control x:type="Button">
+      <Name>EPG</Name>
+      <Id>1</Id>
+      <Width>175</Width>
+      <Height>175</Height>
+      <PosX>190</PosX>
+      <PosY>40</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush />
+        <NoFocusBorderBrush />
+        <FocusBrush />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <FontType>Fluid</FontType>
+        <FontSize>50</FontSize>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF7FFF00" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <LabelMargin>0,0,0,-60</LabelMargin>
+        <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <Image>\defaultVideoBig.png</Image>
+      <LabelText>EPG</LabelText>
+      <Actions>
+        <Action Action="MediaPortalWindow" Param="600" />
+        <Action Action="OpenDialog" Param="50000" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>Music</Name>
+      <Id>2</Id>
+      <Width>175</Width>
+      <Height>175</Height>
+      <PosX>421</PosX>
+      <PosY>40</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush />
+        <NoFocusBorderBrush />
+        <FocusBrush />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <FontType>Fluid</FontType>
+        <FontSize>50</FontSize>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF7FFF00" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <LabelMargin>0,0,0,-60</LabelMargin>
+        <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <Image>\defaultAlbum.png</Image>
+      <LabelText>@Music</LabelText>
+      <Actions>
+        <Action Action="MediaPortalWindow" Param="501" />
+        <Action Action="OpenDialog" Param="50000" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>Radio</Name>
+      <Id>3</Id>
+      <Width>175</Width>
+      <Height>175</Height>
+      <PosX>655</PosX>
+      <PosY>40</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush />
+        <NoFocusBorderBrush />
+        <FocusBrush />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <FontType>Fluid</FontType>
+        <FontSize>50</FontSize>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF7FFF00" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <LabelMargin>0,0,0,-60</LabelMargin>
+        <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <Image>\DefaultMyradioBig.png</Image>
+      <LabelText>@Radio</LabelText>
+      <Actions>
+        <Action Action="MediaPortalWindow" Param="30" />
+        <Action Action="OpenDialog" Param="50000" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>TuneIn</Name>
+      <Id>4</Id>
+      <Width>175</Width>
+      <Height>175</Height>
+      <PosX>893</PosX>
+      <PosY>40</PosY>
+      <VisibleCondition>IsPluginEnabled(TuneIn)</VisibleCondition>
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush />
+        <NoFocusBorderBrush />
+        <FocusBrush />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <FontType>Fluid</FontType>
+        <FontSize>50</FontSize>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF7FFF00" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <LabelMargin>0,0,0,-60</LabelMargin>
+        <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <Image>\DefaultMyradioBig.png</Image>
+      <LabelText>TuneIn</LabelText>
+      <Actions>
+        <Action Action="MediaPortalWindow" Param="25650" />
+        <Action Action="OpenDialog" Param="50000" />
+      </Actions>
+    </Control>
+  </DialogControls>
+</Dialog>
