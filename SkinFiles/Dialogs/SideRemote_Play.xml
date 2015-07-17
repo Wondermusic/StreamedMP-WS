@@ -3,7 +3,7 @@
   <Name>SideRemote_Play</Name>
   <Id>904</Id>
   <Width>520</Width>
-  <Height>576</Height>
+  <Height>659</Height>
   <BorderThickness>2</BorderThickness>
   <CornerRadius>25,25,25,25</CornerRadius>
   <BackgroundBrush x:type="GradientBrush">
@@ -606,6 +606,27 @@
       <LabelText>NewButton</LabelText>
       <Actions>
         <Action Action="MediaPortalAction" Param="ACTION_PREVIOUS_MENU" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>Shortcut</Name>
+      <Id>23</Id>
+      <Width>200</Width>
+      <Height>100</Height>
+      <PosX>160</PosX>
+      <PosY>548</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <EnableLabel>false</EnableLabel>
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <Image>\Remote\button_remote.png</Image>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="50000" />
+        <Action Action="OpenDialog" Param="904" />
       </Actions>
     </Control>
   </DialogControls>

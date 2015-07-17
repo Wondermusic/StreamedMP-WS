@@ -818,5 +818,8 @@
       <ItemMargin>5,5,5,5</ItemMargin>
       <HorizontalAlignment>Right</HorizontalAlignment>
     </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="Empty ListItemStyle">
+      <EnableLabel>false</EnableLabel>
+    </ControlStyle>
   </ControlStyles>
 </StyleCollection>

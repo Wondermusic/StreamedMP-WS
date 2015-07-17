@@ -265,5 +265,5 @@
       </Actions>
     </Control>
   </WindowControls>
-  <VisibleCondition>IsPlayer(RadioTime)</VisibleCondition>
+  <VisibleCondition>IsPlayer(TuneIn)</VisibleCondition>
 </Window>
