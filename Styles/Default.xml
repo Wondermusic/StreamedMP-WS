@@ -821,5 +821,14 @@
     <ControlStyle x:type="ListItemStyle" StyleId="Empty ListItemStyle">
       <EnableLabel>false</EnableLabel>
     </ControlStyle>
+    <ControlStyle x:type="ButtonStyle" StyleId="Settings1">
+      <NoFocusBrush x:type="ImageBrush" Image="\Settings\settingsbuttonnf.png" Stretch="Fill" />
+      <FocusBrush x:type="ImageBrush" Image="\Settings\settingsbuttonfo.png" Stretch="Fill" />
+      <FontType>Fluid Body Caps</FontType>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFDCDCDC" />
+      <LabelMargin>10,0,0,0</LabelMargin>
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+    </ControlStyle>
   </ControlStyles>
 </StyleCollection>

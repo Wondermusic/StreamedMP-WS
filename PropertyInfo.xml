@@ -2505,5 +2505,68 @@
       </MediaPortalTags>
       <IsInternal>false</IsInternal>
     </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#StreamedMP.NowPlayingPreview</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>npstyle1</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#StreamedMP.NowPlayingPreview" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#defaultrate</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>NTSC</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#defaultrate" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#name</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>cinema24</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#name" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#fps</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>25</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#fps" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#rate</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>50</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#rate" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#homeScreen</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>classic and basic, prefer basic</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#homeScreen" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#thumbScreen</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>kleine bildschirme</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#thumbScreen" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
   </Properties>
 </XmlPropertyInfo>
