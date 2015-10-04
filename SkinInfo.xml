@@ -14,8 +14,8 @@
   <TextVerticalScrollWrap>true</TextVerticalScrollWrap>
   <TextVerticalScrollSeperator>---------------------------------</TextVerticalScrollSeperator>
   <SkinOptions>
-    <SkinOption Name="Vertical" Group="BasicHome" IsEnabled="true" IsPreviewImageEnabled="true" PreviewImage="\Preview_Vertical.png" />
-    <SkinOption Name="Horizontal" Group="BasicHome" IsPreviewImageEnabled="true" PreviewImage="\Preview_Horizontal.png" />
+    <SkinOption Name="Vertical" Group="BasicHome" IsEnabled="true" IsPreviewImageEnabled="true" PreviewImage="\Preview_Vertical.png" Description="" />
+    <SkinOption Name="Horizontal" Group="BasicHome" IsPreviewImageEnabled="true" PreviewImage="\Preview_Horizontal.png" Description="" />
   </SkinOptions>
   <SkinName>StreamedMP-WS</SkinName>
   <Author>Wondermusic</Author>

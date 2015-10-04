@@ -830,5 +830,37 @@
       <LabelMargin>10,0,0,0</LabelMargin>
       <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
     </ControlStyle>
+    <ControlStyle x:type="ButtonStyle" StyleId="Settings2">
+      <NoFocusBrush x:type="ImageBrush" Image="\tv_button_ no_focus.png" Stretch="Fill" />
+      <FocusBrush x:type="ImageBrush" Image="\tv_button_focus.png" Stretch="Fill" />
+      <FontType>Fluid Title Caps</FontType>
+      <FontSize>28</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFDCDCDC" />
+      <LabelMargin>10,0,0,0</LabelMargin>
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="VerticalSettings">
+      <NoFocusBrush />
+      <FocusBrush />
+      <FontType>Fluid Body Caps</FontType>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+      <Width>300</Width>
+      <Height>40</Height>
+      <HorizontalAlignment>Left</HorizontalAlignment>
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="VerticalSettings2">
+      <NoFocusBrush x:type="ImageBrush" Image="\playlist_sub_nofocus.png" Stretch="Fill" />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="ImageBrush" Image="\playlist_sub_focus.png" Stretch="Fill" />
+      <FontType>Fluid Body Caps</FontType>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
+      <Width>300</Width>
+      <Height>40</Height>
+      <HorizontalAlignment>Left</HorizontalAlignment>
+    </ControlStyle>
   </ControlStyles>
 </StyleCollection>

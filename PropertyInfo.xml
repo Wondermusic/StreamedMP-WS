@@ -2568,5 +2568,122 @@
       </MediaPortalTags>
       <IsInternal>false</IsInternal>
     </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#displayTimeout</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>0</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#displayTimeout" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#zapDelay</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>3 Sek</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#zapDelay" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#zapTimeout</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>4 Sek</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#zapTimeout" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#timeoutValue</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>1500</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#timeoutValue" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#skipValue</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>10</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#skipValue" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#videosPlaylist</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>C:\test</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#videosPlaylist" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#folderName</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>(E:) CD/DVD</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#folderName" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#folder</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>E:\</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#folder" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#createThumb</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>nein</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#createThumb" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#musicPlaylist</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>c:\</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#musicPlaylist" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#vumeter</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>Analog</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#vumeter" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#scanstatus</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>1000</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#scanstatus" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#updatesincelastimprot</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>only update files after</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#updatesincelastimprot" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
   </Properties>
 </XmlPropertyInfo>
